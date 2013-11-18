@@ -1,18 +1,15 @@
 #!/bin/bash
 
+rm -rf .dist
+
 compass compile
 
 COMMIT_HASH=$(git rev-parse HEAD)
 
 mkdir -p .dist/spse-po
-rsync -av css .dist/spse-po
-rsync -av js .dist/spse-po
-rsync -av images .dist/spse-po
-cp LICENSE .dist/spse-po
-cp index.php .dist/spse-po
-cp screenshot.png .dist/spse-po
-cp README.md .dist/spse-po
-cp template* .dist/spse-po
+
+rsync -av css js images html .dist/spse-po
+cp LICENSE index.php README.md template* .dist/spse-po
 
 cd .dist/
 rm ../spse-po-$COMMIT_HASH.zip
