@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Creating zip archive.."
+
 rm -rf .dist
 
 compass compile
