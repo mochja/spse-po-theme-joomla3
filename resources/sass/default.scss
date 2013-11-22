@@ -122,54 +122,76 @@ aside {
 			}
 		}
 	}
-	div.content {
-		margin: 0 6px;
-		margin-bottom: 1em;
 
-		ul.menu {
+	ul.menu {
+		list-style: none;
+		margin: 0 6px 1em;
+		padding: 0;
+
+		li {
 			list-style: none;
-			margin: 0;
-			padding: 0;
-			li {
-				list-style: none;
-				list-style-type: none;
-				list-style-image: none;
-				margin: 0 0;
-				background: #fff;
-				padding: 0;
-				border-radius: 5px;
-				a {
-					text-decoration: none;
-					display: block;
-					color: #000;
-					font-size: 11px;
-					padding: 3px 3px 3px 20px;
-					&:hover { color: #0F5EBD; }
+			list-style-type: none;
+			list-style-image: none;
+			margin: 0 0 4px 0;
+			padding: 0 0 0 8px;
+			border-radius: 5px;
+			background: #fff url(../images/sipkanew.png) no-repeat 8px;
+			&.active {
+				background-color: #D6E6F7;
+				& > a {
+					color: #04A;
 				}
 			}
-
-			.menu {
+			a {
+				text-decoration: none;
+				display: block;
+				color: #094F5C;
+				font-size: 12px;
+				padding: 6px 3px 6px 20px;
+				&:hover { color: #04A; }
+			}
+			ul {
+				margin-left: 10px;
 				li {
-					padding: 0 0 0 8px;
+					background-color: transparent;
+					a {
+						font-size: 11px;
+						padding: 3px 3px 3px 20px;
+					}
 				}
 			}
 		}
 	}
+
+	div.content {
+		margin: 0 6px;
+		margin-bottom: 1em;
+	}
 }
 
 table.timetable-small {
-	font-size: 11px;
+	font-size: 12px;
+	margin: 0 auto;
 	tr {
+		line-height: 1.5em;
 		&.active {
-			color: #bcb183;
-			text-decoration: underline;
+//			color: #bcb183;
+//			text-decoration: underline;
+		}
+		&.loading {
+			td {
+				.load-bar {
+					width: 10%;
+					height: 2px;
+					background-color: #4FC0BC;
+				}
+			}
 		}
 		td {
 			padding: 0 1px;
 			&.hour {
 				font-weight: 700;
-				width: 73px;
-				padding-left: 5px;
+				width: 70px;
 			}
 		}
 	}
