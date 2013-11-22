@@ -200,3 +200,26 @@ section#main {
 		}
 	}
 }
+
+.pagination {
+	text-align: center;
+	.counter {
+		padding: 0 0 4px;
+	}
+	ul {
+		display: inline-block;
+		li {
+			display: inline-block;
+			background-color: #D1E2F7;
+			margin: 0 3px;
+			padding: 4px;
+			border-radius: 4px;
+			span.pagenav {
+				color: #838383;
+			}
+			a.pagenav {
+				color: #0070A5;
+			}
+		}
+	}
+}
