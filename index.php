@@ -25,32 +25,8 @@ $doc->addStyleSheet('templates/' . $this->template . '/css/default.css');
 
 	<aside id="panel-left">
 		<div class="panel">
-		<section>
-			<h3>Domov</h3>
-		</section>
-		<section>
-			<h3>Rozvrh hodín</h3>
-			<div class="content">
-			<table class="timetable-small">
-				<tr><td class="hour">0. hodina</td><td>07:10 - 07:55</td></tr>
-				<tr><td class="hour">1. hodina</td><td>07:10 - 07:55</td></tr>
-				<tr class="active"><td class="hour">2. hodina</td><td>07:10 - 07:55</td></tr>
-				<tr><td class="hour">3. hodina</td><td>07:10 - 07:55</td></tr>
-				<tr><td class="hour">4. hodina</td><td>07:10 - 07:55</td></tr>
-				<tr><td class="hour">5. hodina</td><td>07:10 - 07:55</td></tr>
-				<tr><td class="hour">6. hodina</td><td>07:10 - 07:55</td></tr>
-				<tr><td class="hour">7. hodina</td><td>07:10 - 07:55</td></tr>
-				<tr><td class="hour">8. hodina</td><td>07:10 - 07:55</td></tr>
-				<tr><td class="hour">9. hodina</td><td>07:10 - 07:55</td></tr>
-			</table>
-			</div>
-		</section>
-		<section>
-			<h3>Vyhľadávanie</h3>
-		</section>
-		<section>
-			<h3>Nadácia</h3>
-		</section>
+			<jdoc:include type="modules" name="position-4" />
+			<jdoc:include type="modules" name="position-6" />
 		</div>
 	</aside>
 
