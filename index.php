@@ -14,17 +14,10 @@ $doc->addStyleSheet('templates/' . $this->template . '/css/default.css');
 <body>
 	<div class="container">
 	<header>
-		<img src="images/logo2.png" alt="" height=""/>
+		<img src="images/logo2.png" alt="" height="200" width="980" />
 		<nav>
 			<ul>
-				<li><a href="#">Domov</a></li>
-				<li><a href="#">Škola</a></li>
-				<li><a href="#">Štúdium</a></li>
-				<li><a href="#">Pre uchádzačov</a></li>
-				<li><a href="#">Pre absolventov</a></li>
-				<li><a href="#">Internát a jedáleň</a></li>
-				<li><a href="#">Život školy</a></li>
-				<li><a href="#">Sponzori</a></li>
+				<jdoc:include type="modules" name="position-1" />
 			</ul>
 		</nav>
 
